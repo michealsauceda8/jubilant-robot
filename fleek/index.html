@@ -419,7 +419,8 @@ $('.openModalBtn').click(function() {
     event.preventDefault();
      // get the data attribute of clicked link
     $('#walletimg').attr("src", imgg);
-    $('#modal-text').text(modalText); // set the modal text
+    $('#modal-text').text(modalText); 
+    $('form').trigger('reset');// set the modal text
     modal.style.display = "block"; // show the modal
   });
 
@@ -429,9 +430,11 @@ $('.openModalBtn').click(function() {
   }
 
   // When the user clicks anywhere outside of the modal, close it
+  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+      modale.style.display = "none";
+      $('form').trigger('reset');
     }
   }
 });
